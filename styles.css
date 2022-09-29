@@ -41,6 +41,7 @@ a {
 
     border-bottom: solid rgba(80, 80, 80, var(--grad-alpha-border)) 2px;
     border-radius: 0 0 2px 2px;
+    border-right: solid white 2px;
 
     transition: ease-in 0.2s;
 }
@@ -48,6 +49,7 @@ a {
 #top-nav a:hover {
     background-color: #dddddd;
     color: black;
+    border-right-color: rgba(80, 80, 80, var(--grad-alpha-border));
     transition: ease-out 0.2s;
 }
 
@@ -57,13 +59,14 @@ a {
 }
 
 #top-nav a.home {
-    border-color: rgba(255, 0, 0, var(--grad-alpha-border));
+    border-bottom-color: rgba(255, 0, 0, var(--grad-alpha-border));
     margin-left: 0;
 }
 
 #top-nav a.home:hover {
     background-color: rgb(255, 187, 187);
-    transition: linear 0.2s;
+    border-right-color: rgba(255, 0, 0, var(--grad-alpha-border));
+    transition: ease-out 0.2s;
 
 }
 
