@@ -10,17 +10,15 @@ body {
     margin: auto 1em 10em;
 }
 
-a {
-    cursor: pointer;
-}
-
 #top-header {
     font-family: 'Aclonica';
     font-size: 3em;
     margin: 1em auto;
 }
 
+/* navigation bar */
 #top-nav {
+    background-color: rgb(var(--body-bg));
     position: sticky;
     top: 0;
     overflow: hidden;
@@ -32,7 +30,7 @@ a {
     display: block;
 
     background: linear-gradient(rgb(var(--body-bg)), rgba(var(--body-bg), var(--grad-alpha-bg)));
-    color: #222222;
+    color: #414141;
     text-align: center;
     text-decoration: none;
 
@@ -41,7 +39,7 @@ a {
 
     border-bottom: solid rgba(80, 80, 80, var(--grad-alpha-border)) 2px;
     border-radius: 0 0 2px 2px;
-    border-right: solid white 2px;
+    border-right: solid rgb(var(--body-bg)) 2px;
 
     transition: ease-in 0.2s;
 }
@@ -70,14 +68,23 @@ a {
 
 }
 
+/* heading */
 h1 {
     font-family: 'Abril Fatface', serif;
+    font-size: 3em;
     font-variant: small-caps;
+
+    margin-top: 1em;
+}
+
+/* a */
+a {
+    cursor: pointer;
+    text-decoration: none;
 }
 
 a.button {
     color: white;
-    text-decoration: none;
 
     background-color: red;
     padding: 0 0.3125em;
@@ -94,6 +101,33 @@ a.button:active {
     border-style: inset;
 }
 
+q.squared  {
+    quotes: "<" ">";
+    color: black;
+}
+
+q.squared:hover {
+    quotes: ">" "<";
+    color: red;
+}
+
+q.squared:active {
+    quotes: "/" "";
+}
+
+a.squared {
+    color: red;
+}
+
+a.squared:hover {
+    color: black;
+}
+
+a.squared:active {
+    font-weight: bold;
+}
+
+/* table */
 table {
     font-weight: bold;
     list-style: none;
@@ -133,6 +167,7 @@ td:hover {
     background-color: red;
 }
 
+/* form */
 input {
     appearance: none;
     
@@ -168,31 +203,4 @@ input.js-radio:checked {
 
 input.php-radio:checked {
     background-color: mediumslateblue;
-}
-
-q.squared  {
-    quotes: "<" ">";
-    color: black;
-}
-
-q.squared:hover {
-    quotes: ">" "<";
-    color: red;
-}
-
-q.squared:active {
-    quotes: "/" "";
-}
-
-a.squared {
-    color: red;
-    text-decoration: none;
-}
-
-a.squared:hover {
-    color: black;
-}
-
-a.squared:active {
-    font-weight: bold;
 }
